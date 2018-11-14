@@ -1,0 +1,22 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+
+int main()
+{
+	double bmi;
+	double weight;
+	double height;
+
+	printf("Enter your weight in pounds: ");
+	scanf_s("%lf", &weight);
+	printf("Enter your height in inches: ");
+	scanf_s("%lf", &height);
+
+	bmi = (weight * 703) / (height * height);
+
+	printf("Your  BMI is: %.2lf\n", bmi);
+
+
+	return 0;
+}
